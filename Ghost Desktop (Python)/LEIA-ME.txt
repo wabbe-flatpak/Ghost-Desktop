@@ -1,0 +1,12 @@
+WABBE CONTROL CENTER (versao Python)
+
+1) Feche o WabbeControlCenter.exe antigo (icone na bandeja > Sair). Os dois usam os mesmos atalhos.
+2) De dois cliques em instalar.bat (so na primeira vez).
+3) De dois cliques em iniciar.bat.
+
+Configuracao salva em: %APPDATA%\WabbeControlCenter\config.json
+Log de erros:          %APPDATA%\WabbeControlCenter\wabbe.log
+Suas opcoes do config.ini antigo sao importadas sozinhas na primeira vez.
+
+Atalhos: Ctrl+Alt+C (Clean)  Ctrl+Alt+P (Pausar)  Ctrl+Alt+E (Estudio)
+Se o cursor ficar invisivel: clique em "Restaurar tudo" ou reinicie o programa.
