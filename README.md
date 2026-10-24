@@ -1,6 +1,8 @@
-# Wabbe Control Center
+# Ghost Desktop
 
 Um aplicativo útil para coisas inúteis.
+
+(Antes se chamava Wabbe Control Center, mas esse nome parecia painel de controle de usina nuclear, então virou Ghost Desktop. Porque ele faz as coisas sumirem. Genial, eu sei.)
 
 Basicamente, isso aqui nasceu porque eu queria controlar umas paradas do Windows sem ter que ficar caçando configuração escondida igual item raro em RPG ruim.
 
@@ -14,28 +16,26 @@ Ainda em desenvolvimento, tem muitos probleminhas chatos mas to com preguiça pr
 * Esconde o cursor quando ele fica parado
 * Tem modos diferentes pra usar dependendo da situação
 * Fica na bandeja do Windows
-* Salva as configurações pra não ter que arrumar tudo de novo
+* Salva as configurações pra não ter que arrumar tudo de novo (agora de verdade, juro)
 * Tenta ser bonito sem pesar igual app feito por empresa que odeia RAM
 
-## Versão nova: Ghost Desktop (Python)
+## Novidades (ou: coisas que eu deveria ter feito desde o começo)
 
-A pasta **`Ghost Desktop (Python)`** é a versão nova, com visual bem melhor (CustomTkinter) e que finalmente salva as configurações direito. A pasta `Wabbe Control Center` é a versão antiga em C++.
+* **Versão nova em Python**: a pasta `Ghost Desktop (Python)` é a versão atual, com uma interface que não parece ter saído do Windows 98. A pasta `Wabbe Control Center` é a versão antiga em C++, que fica aí por motivos sentimentais.
+* **Organizador automático**: joga cada arquivo dos Downloads na pasta certa, separa os atalhos da área de trabalho em `Jogos` e `Apps` e arruma os arquivos soltos de Documentos. Ele não apaga nada, só move, porque eu não confio nem em mim mesmo. Instalador velho vai pra `_Para apagar`, e quem apaga é você.
+* **Os ícones não somem mais na sua cara**: com um app aberto em janela, eles ficam quietinhos. Só somem com tudo minimizado ou com o app em tela cheia, que é quando ninguém tá olhando mesmo.
+* **Adeus slider**: o tempo agora você digita ou escolhe numa lista, porque arrastar bolinha pra acertar "7 segundos" é um sofrimento que ninguém merece.
 
-Novidades:
+## Como usar essa bagaça
 
-* **Organizador automático**: arruma Downloads (por tipo de arquivo), Área de Trabalho (atalhos de jogos em `Jogos`, programas em `Apps`) e arquivos soltos de Documentos. Nunca apaga nada, só move. Instaladores velhos vão para `_Para apagar` depois de X dias.
-* **Ícones não somem com app aberto em janela**: só somem com tudo minimizado ou com o app maximizado/em tela cheia.
-* **Tempo em caixinha**: dá para digitar os segundos ou escolher numa lista, em vez de ficar arrastando.
+1. Instala o Python pelo [python.org](https://www.python.org/downloads/) e marca "Add python.exe to PATH" (sério, marca, senão nada funciona e a culpa vai ser minha)
+2. Entra na pasta `Ghost Desktop (Python)` e roda o `instalar.bat` (só na primeira vez)
+3. Roda o `iniciar.bat`
+4. Pronto. Era isso.
 
-### Como rodar
+Quer um `.exe` pra se sentir profissional? Roda o `build_exe.bat` e ele aparece em `dist\Wabbe.exe`.
 
-1. Instale o Python pelo [python.org](https://www.python.org/downloads/) (marque "Add python.exe to PATH").
-2. Dentro de `Ghost Desktop (Python)`, rode `instalar.bat` (só na primeira vez).
-3. Rode `iniciar.bat`.
-
-Quer um `.exe`? Rode `build_exe.bat` e ele aparece em `dist\Wabbe.exe`.
-
-Configurações ficam em `%APPDATA%\WabbeControlCenter\config.json`.
+As configurações ficam em `%APPDATA%\WabbeControlCenter\config.json`, caso você goste de mexer onde não deve.
 
 ## Por que existe?
 
